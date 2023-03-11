@@ -16,7 +16,7 @@ return new class extends Migration {
             $table->text(column: 'queue');
             $table->longText(column: 'payload');
             $table->longText(column: 'exception');
-            
+
             $table->timestamp(column: 'failed_at')->useCurrent();
         });
     }
